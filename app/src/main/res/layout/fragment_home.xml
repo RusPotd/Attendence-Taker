@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="8dp"
+        android:text="Show Attendence"
+        android:id="@+id/showAll" />
+
+    <Button
+        android:id="@+id/addNew"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="8dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/showAll"
+        android:text="Add New Subject" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/addNew"
+        android:clipToPadding="false"
+        android:padding="4dp"
+        tools:listitem="@layout/testexample" />
+
+</RelativeLayout>
