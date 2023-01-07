@@ -7,48 +7,37 @@
     android:padding="8dp"
     tools:context=".AddClassFragment">
 
-    <LinearLayout
+    <GridLayout
+        android:id="@+id/rangeEndLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:id="@+id/subjectLayout"
-        android:padding="8dp"
-        android:weightSum="5"
-        >
+        android:columnCount="2"
+        android:layout_margin="8dp"
+        android:rowCount="4">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:layout_weight="2"
+        android:id="@+id/subjectText"
+        android:layout_row="0"
+        android:layout_column="0"
         android:text="Subject Name" />
 
-        <EditText
-            android:id="@+id/inputSubName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_weight="3"
-            android:ems="10"
-            android:inputType="textPersonName"
-          />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/inputSubName"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:id="@+id/prefixLayout"
-        android:layout_marginTop="5dp"
-        android:weightSum="5"
-        android:layout_below="@id/subjectLayout"
-        >
+        android:layout_marginStart="8dp"
+        android:ems="11"
+        android:inputType="textPersonName"
+        />
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:layout_weight="2"
             android:text="Prefix" />
 
         <EditText
@@ -56,57 +45,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_weight="3"
-            android:ems="10"
+            android:ems="11"
             android:inputType="textPersonName"
             />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:weightSum="5"
-        android:id="@+id/rangeStartLayout"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/prefixLayout"
-        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:layout_weight="2"
+
             android:text="Starting Roll No" />
 
         <EditText
             android:id="@+id/inputStartIndex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"
+
             android:layout_marginStart="8dp"
-            android:ems="10"
+            android:ems="11"
             android:inputType="textPersonName"
             />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="8dp"
-        android:weightSum="5"
-        android:id="@+id/rangeEndLayout"
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/rangeStartLayout"
-        >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
-            android:layout_weight="2"
+
             android:text="Ending Roll No" />
 
         <EditText
@@ -114,12 +78,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:ems="10"
-            android:layout_weight="3"
+            android:ems="11"
+
             android:inputType="textPersonName"
             />
 
-    </LinearLayout>
+    </GridLayout>
 
     <Button
         android:id="@+id/createSubButton"
@@ -128,7 +92,7 @@
         android:layout_below="@+id/rangeEndLayout"
         android:layout_marginHorizontal="25dp"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="45dp"
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="15dp"
         android:text="Create Subject" />

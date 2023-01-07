@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -31,7 +32,7 @@ TestAdapter.OnItemLongClickListener {
 
         names = ArrayList()
 
-        val showAll : Button = v.findViewById<Button>(R.id.showAll)
+        val showAll : CardView = v.findViewById<CardView>(R.id.showAll)
         showAll.setOnClickListener {
             val fragmentManager: FragmentManager = parentFragmentManager
             fragmentManager.beginTransaction()
@@ -41,7 +42,7 @@ TestAdapter.OnItemLongClickListener {
                 .commit()
         }
 
-        val addNewBtn : Button = v.findViewById<Button>(R.id.addNew)
+        val addNewBtn : CardView = v.findViewById<CardView>(R.id.addNew)
         addNewBtn.setOnClickListener {
 
             val fragmentManager: FragmentManager = parentFragmentManager
