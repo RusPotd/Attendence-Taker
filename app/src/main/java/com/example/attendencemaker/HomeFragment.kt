@@ -63,7 +63,6 @@ TestAdapter.OnItemLongClickListener {
             names += item
         }
 
-
         var recyclerview = v.findViewById(R.id.recyclerview) as RecyclerView
         recyclerview.adapter = TestAdapter(names, this, this)
         recyclerview.layoutManager = LinearLayoutManager(this.context)

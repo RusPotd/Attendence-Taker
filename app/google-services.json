@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "445776526761",
+    "project_id": "attendence-maker",
+    "storage_bucket": "attendence-maker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445776526761:android:4eb486bdbee601bb5658b8",
+        "android_client_info": {
+          "package_name": "com.example.attendencemaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445776526761-0742l012f56lhch7rc5qu8093uivpnj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDhcYRKT71ErgLrGhDXfns-hjeDUIV00U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445776526761-0742l012f56lhch7rc5qu8093uivpnj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
